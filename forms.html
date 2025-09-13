@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Forms</title>
+</head>
+<body>
+
+<!-- Sidebar -->
+<table border="1" width="20%" height="100%" align="left">
+<tr><td valign="top">
+<h3>Internet Working</h3>
+<ul>
+<li><a href="index.html#intro">How Internet Works</a></li>
+<li><a href="index.html#components">Key Components</a></li>
+<li><a href="index.html#workflow">Workflow</a></li>
+<li><a href="index.html#example">Example</a></li>
+</ul>
+
+<h3>HTML Basics</h3>
+<ul>
+<li><a href="html_intro.html#headings">Headings</a></li>
+<li><a href="html_intro.html#paragraph">Paragraph</a></li>
+<li><a href="html_intro.html#anchor">Anchor Tag</a></li>
+<li><a href="html_intro.html#image">Image Element</a></li>
+</ul>
+
+<h3>Lists & Tables</h3>
+<ul>
+<li><a href="lists_tables.html#ordered">Ordered List</a></li>
+<li><a href="lists_tables.html#unordered">Unordered List</a></li>
+<li><a href="lists_tables.html#nested">Nested Lists</a></li>
+<li><a href="lists_tables.html#tables">Tables</a></li>
+</ul>
+
+<h3>File Path & Boilerplate</h3>
+<ul>
+<li><a href="file_boiler.html#filepath">File Path</a></li>
+<li><a href="file_boiler.html#boilerplate">Boilerplate Code</a></li>
+<li><a href="file_boiler.html#div">DIV + Class + Id</a></li>
+</ul>
+
+<h3>HTML Forms</h3>
+<ul>
+<li><a href="#basic">Basic Form</a></li>
+<li><a href="#input">Input Types</a></li>
+<li><a href="#advanced">Advanced Form Elements</a></li>
+<li><a href="#exampleform">Complete Form Example</a></li>
+</ul>
+
+<h3>Deploy & Media</h3>
+<ul>
+<li><a href="deploy.html#media">Media Tag</a></li>
+<li><a href="deploy.html#multi">Multi Page Website</a></li>
+<li><a href="deploy.html#deploy">Deploy First Project</a></li>
+</ul>
+</td></tr>
+</table>
+
+<!-- Main Content -->
+<table border="0" width="75%" align="right">
+<tr><td>
+<h1>HTML Forms</h1>
+
+<h2 id="basic">Basic Form</h2>
+<p>Forms allow user input. Use &lt;form&gt; tag.</p>
+<img src="form1.png" width="400">
+<pre>
+&lt;form action="/submit"&gt;
+  Name: &lt;input type="text"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;
+</pre>
+<hr>
+
+<h2 id="input">Input Types</h2>
+<p>Common input types include text, password, email, radio, checkbox, submit.</p>
+<pre>
+&lt;input type="text" name="username"&gt;
+&lt;input type="email" name="email"&gt;
+&lt;input type="radio" name="gender" value="male"&gt;
+&lt;input type="checkbox" name="subscribe"&gt;
+</pre>
+<hr>
+
+<h2 id="advanced">Advanced Form Elements</h2>
+<p>Other elements: textarea, select, button, fieldset.</p>
+<pre>
+&lt;textarea&gt;Write here&lt;/textarea&gt;
+&lt;select&gt;
+  &lt;option&gt;Option 1&lt;/option&gt;
+&lt;/select&gt;
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+</pre>
+<img src="https://cdn.educba.com/academy/wp-content/uploads/2019/08/HTML-Form-Controls.jpg" alt="" width="400">
+<hr>
+<h2 id="exampleform">Complete Form Example</h2>
+<p>This is a complete example with multiple input types, radio, checkbox, dropdown, textarea, and buttons.</p>
+
+<form action="/submit_form" method="post">
+  Name: <input type="text" name="name" placeholder="Enter your name"><br><br>
+  Email: <input type="email" name="email" placeholder="Enter your email"><br><br>
+  
+  Gender:<br>
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br><br>
+  
+  Hobbies:<br>
+  <input type="checkbox" name="hobby" value="reading"> Reading<br>
+  <input type="checkbox" name="hobby" value="coding"> Coding<br>
+  <input type="checkbox" name="hobby" value="sports"> Sports<br><br>
+  
+  Country:
+  <select name="country">
+    <option value="india">India</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+    <option value="other">Other</option>
+  </select><br><br>
+  
+  Comments:<br>
+  <textarea name="comments" rows="4" cols="50" placeholder="Write your comments here"></textarea><br><br>
+  
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
+
+</td></tr>
+</table>
+
+</body>
+</html>

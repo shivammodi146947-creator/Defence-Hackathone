@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Lists & Tables</title>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <table border="1" width="20%" height="100%" align="left">
+      <tr>
+        <td valign="top">
+          <h3>Internet Working</h3>
+          <ul>
+            <li><a href="index.html#intro">How Internet Works</a></li>
+            <li><a href="index.html#components">Key Components</a></li>
+            <li><a href="index.html#workflow">Workflow</a></li>
+            <li><a href="index.html#example">Example</a></li>
+          </ul>
+
+          <h3>HTML Basics</h3>
+          <ul>
+            <li><a href="html_intro.html#headings">Headings</a></li>
+            <li><a href="html_intro.html#paragraph">Paragraph</a></li>
+            <li><a href="html_intro.html#anchor">Anchor Tag</a></li>
+            <li><a href="html_intro.html#image">Image Element</a></li>
+          </ul>
+
+          <h3>Lists & Tables</h3>
+          <ul>
+            <li><a href="#ordered">Ordered List</a></li>
+            <li><a href="#unordered">Unordered List</a></li>
+            <li><a href="#nested">Nested Lists</a></li>
+            <li><a href="#tables">Tables</a></li>
+          </ul>
+
+          <h3>File Path & Boilerplate</h3>
+          <ul>
+            <li><a href="file_boiler.html#filepath">File Path</a></li>
+            <li><a href="file_boiler.html#boilerplate">Boilerplate Code</a></li>
+            <li><a href="file_boiler.html#div">DIV + Class + Id</a></li>
+          </ul>
+
+          <h3>HTML Forms</h3>
+          <ul>
+            <li><a href="forms.html#basic">Basic Form</a></li>
+            <li><a href="forms.html#input">Input Types</a></li>
+            <li><a href="forms.html#advanced">Advanced Form Elements</a></li>
+          </ul>
+
+          <h3>Deploy & Media</h3>
+          <ul>
+            <li><a href="deploy.html#media">Media Tag</a></li>
+            <li><a href="deploy.html#multi">Multi Page Website</a></li>
+            <li><a href="deploy.html#deploy">Deploy First Project</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Main Content -->
+    <table border="0" width="75%" align="right">
+      <tr>
+        <td>
+          <h1>HTML Lists & Tables</h1>
+
+          <h2 id="ordered">Ordered List</h2>
+          <p>
+            Ordered lists use &lt;ol&gt; tag. Items are numbered automatically.
+          </p>
+          <img
+            src="https://img.uxcel.com/cdn-cgi/image/format=auto/practices/nested-html-lists-1615549726590/a-1664528015671-2x.jpg"
+            width="400"
+          />
+          <pre>
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+</pre
+          >
+          <hr />
+
+          <h2 id="unordered">Unordered List</h2>
+          <p>
+            Unordered lists use &lt;ul&gt; tag. Items are shown with bullets.
+          </p>
+          <img src="unorderList.png" width="400" />
+          <pre>
+&lt;ul&gt;
+  &lt;li&gt;Item A&lt;/li&gt;
+  &lt;li&gt;Item B&lt;/li&gt;
+&lt;/ul&gt;
+</pre
+          >
+          <hr />
+
+          <h2 id="nested">Nested Lists</h2>
+          <p>You can create lists inside lists (nested lists).</p>
+          <img src="nested.png" width="400" />
+          <pre>
+&lt;ul&gt;
+  &lt;li&gt;Item 1
+    &lt;ol&gt;
+      &lt;li&gt;Subitem 1&lt;/li&gt;
+      &lt;li&gt;Subitem 2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre
+          >
+          <hr />
+
+          <h2 id="tables">Tables</h2>
+          <p>
+            Tables are defined with &lt;table&gt;. Rows use &lt;tr&gt;, cells
+            use &lt;td&gt; or &lt;th&gt;.
+          </p>
+
+          <h3>Normal Table</h3>
+          <img src="https://www.programiz.com/sites/tutorial2program/files/html-table.png" width="400" />
+          <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+    &lt;th&gt;City&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+    &lt;td&gt;New York&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Bob&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+    &lt;td&gt;London&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre
+          >
+          <hr />
+
+          <h3>Nested Table</h3>
+          <p>Tables can be nested inside a cell of another table.</p>
+          <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Team&lt;/th&gt;
+    &lt;th&gt;Players&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Team A&lt;/td&gt;
+    &lt;td&gt;
+      &lt;table border="1"&gt;
+        &lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Bob&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Team B&lt;/td&gt;
+    &lt;td&gt;
+      &lt;table border="1"&gt;
+        &lt;tr&gt;&lt;td&gt;Charlie&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;David&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre
+          >
+
+          <img
+            src="https://sdmntprcentralus.oaiusercontent.com/files/00000000-5050-61f5-82eb-2c79b8139cd0/raw?se=2025-09-13T16%3A21%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=3fbed076-3f57-57cd-a6b6-10dec3cc5695&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-12T20%3A43%3A39Z&ske=2025-09-13T20%3A43%3A39Z&sks=b&skv=2024-08-04&sig=y8grq8d4X0u9gdDRQsDH8LTf7hZ8Jyw4mBDJkUoC7B4%3D"
+            width="400"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
